@@ -8,18 +8,18 @@ npm install
 node server.js
 
 ### Access api:
-#### -- GET all blog --
+** -- GET all blog -- **
 curl -X GET http://localhost:9001/blogs
 
-#### -- GET blog by id --
+** -- GET blog by id -- **
 curl -X GET http://localhost:9001/blogs/1
 
-#### -- POST blog --
+** -- POST blog -- **
 
 
 curl -X POST http://localhost:9001/blogs -H 'Content-Type: application/json' -d '{"title":"", "content":"", "post_by":"", "comments":[]}'
 
-#### -- POST comment --
+** -- POST comment -- **
 
 
 curl -X POST http://localhost:9001/blogs/:blogId/comment -H 'Content-Type: application/json' -d '{"message":"", "comment_by":""}'
