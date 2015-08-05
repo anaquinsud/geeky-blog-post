@@ -3,7 +3,7 @@ var express = require('express'),
 	cors = require('cors'),
 	app = express(),
 	blogs = [];
-	
+
 app.use(cors());
 app.use(bodyParser.json());
 app.get('/blogs', function(req, res){
@@ -25,7 +25,7 @@ app.post('/blogs', function(req, res){
 app.post('/blogs/:id/comment', function(req, res){
 	var blogId = req.params.id - 1;
 	blog = blogs[blogId];
-	comment = req.body.comment;
+	comment = req.body;
 	blog.comments.push(comment);
 	blogs[blogId] = blog;
 	res.sendStatus(200);

@@ -7,26 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.8.2",
-    "gulp": "^3.9.0",
-    "gulp-karma": "0.0.4",
-    "gulp-live-server": "0.0.23",
-    "jasmine": "^2.3.1",
-    "jasmine-core": "^2.3.4",
-    "karma": "^0.13.3",
-    "karma-chrome-launcher": "^0.2.0",
-    "karma-jasmine": "^0.3.6",
-    "karma-jasmine-html-reporter-livereload": "^1.0.0",
-    "karma-jasmine-runner-reporter": "^0.1.0",
-    "karma-phantomjs-launcher": "^0.2.0",
-    "phantomjs": "^1.9.17"
-  },
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.13.3",
     "cors": "^2.7.1",
-    "express": "^4.13.2",
-    "jasmine": "^2.3.1"
+    "express": "^4.13.2"
   }
 }
