@@ -1,27 +1,11 @@
-var express = require('express');
-var bodyParser = require('body-parser')
-var cors = require('cors');
-
-var app = express();
+var express = require('express'),
+	bodyParser = require('body-parser'),
+	cors = require('cors'),
+	app = express(),
+	blogs = [];
+	
 app.use(cors());
 app.use(bodyParser.json());
-
-// var blogs = [
-// 	{ title: 'My first blog', post_by: 'Ball Weera Kasetsin', 
-// 		comments: [{ message: 'This is my comment', comment_by: 'Ball' }] }
-// ]
-
-var blogs = [];
-
-// var blog = {
-// 	title: '',
-// 	post_by: '',
-// 	comments: []
-// }
-
-// blog = { title: 'My first blog', post_by: 'Ball', comments: [] };
-// blogs.push(blog);
-
 app.get('/blogs', function(req, res){
 	res.status(200).json(blogs);
 });
